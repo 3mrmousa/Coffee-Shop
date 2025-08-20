@@ -22,6 +22,12 @@
 .mb-7 {
   margin-bottom: 7rem;
 }
+.mt-10 {
+  margin-top: 10rem;
+}
+.mb-10 {
+  margin-bottom: 10rem;
+}
 
 /* Start Navbar */
 
@@ -111,5 +117,57 @@
 
   .aboutus-section .container-fluid .text {
     width: 100%;
+  }
+}
+
+/* Start Testimonials */
+
+.testimonials-section .header hr {
+  width: 25%;
+  border: 5px solid var(--secondary-color);
+  opacity: 1;
+}
+
+.testimonials-section img {
+  width: 100%;
+  border-radius: 10rem;
+}
+
+.testimonials-section .cards-wrapper {
+  width: 100%;
+}
+
+.testimonials-section .card {
+  padding: 3rem;
+  width: 25%;
+  border: 0;
+}
+
+.testimonials-section .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff9900' viewBox='0 0 16 16'%3E%3Cpath d='M11 1L3 8l8 7V1z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff9900' viewBox='0 0 16 16'%3E%3Cpath d='M5 1l8 7-8 7V1z'/%3E%3C/svg%3E");
+}
+
+@media (max-width: 768px) {
+  .testimonials-section .card {
+    padding: 0rem;
+    width: 40%;
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .testimonials-section .card {
+    padding: 0rem;
+    width: 30%;
   }
 }
