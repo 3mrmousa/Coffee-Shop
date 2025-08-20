@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <title>Nike</title>
+    <title>Coffee</title>
   </head>
   <body>
     <!-- Start Nav -->
@@ -30,22 +30,24 @@
         >
           <ul class="navbar-nav gap-2">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link" href="#menu">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Testimonials</a>
+              <a class="nav-link" href="#testimonials">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gallery</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -54,7 +56,8 @@
 
     <!-- Start Hero -->
     <div
-      class="hero-section d-flex justify-content-center align-items-center mt-5"
+      id="home"
+      class="hero-section d-flex justify-content-center align-items-center mt-5 mb-10"
     >
       <div
         class="container-fluid d-flex flex-column-reverse flex-md-row justify-content-center justify-content-md-evenly align-items-center gap-5 gap-md-0"
@@ -84,6 +87,7 @@
 
     <!-- Start About Us -->
     <div
+      id="about"
       class="aboutus-section d-flex justify-content-center align-items-center mt-7 mb-7"
     >
       <div
@@ -92,10 +96,10 @@
         <div class="image">
           <img class="w-100" src="images/about-image.jpg" alt="About image" />
         </div>
-        <div class="text text-center d-flex flex-column gap-3">
-          <div class="head d-flex flex-column align-items-center">
-            <h2 class="fw-bold fs-2 m-0">ABOUT US</h2>
-            <hr class="border-4 w-25" />
+        <div class="text text-center d-flex flex-column gap-4">
+          <div class="header d-flex flex-column align-items-center">
+            <p>ABOUT US</p>
+            <hr />
           </div>
           <p>
             At Coffe House in Berndorf, Germany, We Pride Ourselves on begin a
@@ -123,12 +127,106 @@
       </div>
     </div>
 
+    <!-- Start Menu -->
+    <div id="menu" class="menu-section pt-5 pb-5 bg-dark">
+      <div
+        class="container d-flex flex-column align-items-center justify-content-center gap-5"
+      >
+        <div
+          class="header d-flex flex-column align-items-center justify-content-center w-50"
+        >
+          <p class="text-white">MENU</p>
+          <hr />
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 gap-5">
+          <div class="card">
+            <img
+              src="images/hot-beverages.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hot Beverages</h5>
+              <p class="card-text">
+                Wide range of steaming hot <br />
+                coffee to make you fresh and light.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/cold-beverages.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cold Beverages</h5>
+              <p class="card-text">
+                Creamy and frothy cold coffee to <br />
+                make you cool.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/refreshment.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Refreshment</h5>
+              <p class="card-text">
+                Fruit and ice refreshing drink to <br />
+                make feel refresh.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/burger-frenchfries.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Burger & French Fries</h5>
+              <p class="card-text">
+                Quick bites to satisfy your small <br />
+                size hunger.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="images/special-combo.png"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Special Combo</h5>
+              <p class="card-text">
+                Your favorite eating and drinking <br />
+                combations.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/desserts.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Desserts</h5>
+              <p class="card-text">
+                Satiate your palate and take you <br />
+                on a culinary trear.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Start Testimonials -->
-    <div class="testimonials-section mt-10 mb-7">
-      <div class="container d-flex flex-column gap-2">
-        <div class="header d-flex flex-column align-items-center justify-content-center">
-          <p class="fs-1 fw-bold">Testimonials</p>
-          <hr class="" />
+    <div id="testimonials" class="testimonials-section mt-10 mb-7">
+      <div class="container d-flex flex-column gap-5 gap-md-2">
+        <div
+          class="header d-flex flex-column align-items-center justify-content-center"
+        >
+          <p>Testimonials</p>
+          <hr />
         </div>
         <div class="carousel-section">
           <div id="carouselExampleIndicators" class="carousel slide">
@@ -230,6 +328,107 @@
         </div>
       </div>
     </div>
+
+    <!-- Start Gallery -->
+    <div id="gallery" class="gallery-section mt-5 mb-10">
+      <div class="container d-flex flex-column align-items-center gap-5">
+        <div
+          class="header d-flex flex-column align-items-center justify-content-center w-50"
+        >
+          <p>GALLERY</p>
+          <hr />
+        </div>
+        <div
+          class="images row row-cols-1 row-cols-md-3 row-cols-lg-4 gap-4 w-100 justify-content-center"
+        >
+          <div class="img">
+            <img src="images/gallery-1.jpg" alt="" />
+          </div>
+          <div class="img">
+            <img src="images/gallery-2.jpg" alt="" />
+          </div>
+          <div class="img">
+            <img src="images/gallery-3.jpg" alt="" />
+          </div>
+          <div class="img">
+            <img src="images/gallery-4.jpg" alt="" />
+          </div>
+          <div class="img">
+            <img src="images/gallery-5.jpg" alt="" />
+          </div>
+          <div class="img">
+            <img src="images/gallery-6.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Contact -->
+    <div id="contact" class="contactus-section pb-5">
+      <div class="container d-flex flex-column align-items-center">
+        <div
+          class="header d-flex flex-column align-items-center justify-content-center"
+        >
+          <p>Conatct Us</p>
+          <hr />
+        </div>
+        <div
+          class="content d-flex flex-column flex-md-row align-items-center justify-content-evenly w-100"
+        >
+          <div class="left">
+            <div class="info d-flex gap-2">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>123 Fake, Wilderness, CA 98765</p>
+            </div>
+            <div class="info d-flex gap-2">
+              <i class="fa-solid fa-envelope"></i>
+              <p>amrmoda123@gmail.com</p>
+            </div>
+            <div class="info d-flex gap-2">
+              <i class="fa-solid fa-phone"></i>
+              <p>+20-1015052567</p>
+            </div>
+            <div class="info d-flex gap-2">
+              <i class="fa-solid fa-clock"></i>
+              <p>Monday-Friday: 9:00 AM - 5:00 PM</p>
+            </div>
+            <div class="info d-flex gap-2">
+              <i class="fa-solid fa-clock"></i>
+              <p>Saturday: 10:00 AM 3:00 PM</p>
+            </div>
+            <div class="info d-flex gap-2">
+              <i class="fa-solid fa-clock"></i>
+              <p>Sunday: Closed</p>
+            </div>
+          </div>
+          <form action="" class="d-flex flex-column gap-5">
+            <input type="text" placeholder="Your name" />
+            <input type="email" placeholder="Your email" />
+            <input class="text-area" type="text" placeholder="Your message" />
+            <button class="mx-auto" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Footer -->
+    <footer
+      class="d-flex flex-column flex-md-row align-items-center justify-content-around bg-dark pt-3"
+    >
+      <p class="text-white">© 2025 coffee shop</p>
+      <div class="links">
+        <a class="text-white text-dark fs-5" href=""
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
+        <a class="text-white text-dark fs-5" href=""
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a class="text-white text-dark fs-5" href=""
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
+      <p class="text-white">Privacy policy - Refund policy</p>
+    </footer>
 
     <script src="js/bootstrap.bundle.js"></script>
   </body>

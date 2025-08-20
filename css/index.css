@@ -16,6 +16,19 @@
   --medium-gray-color: #ccc;
 }
 
+.header p {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header hr {
+  margin: 0;
+  width: 15%;
+  border: 3px solid var(--secondary-color);
+  opacity: 1;
+}
+
 .mt-7 {
   margin-top: 7rem;
 }
@@ -41,6 +54,10 @@
 
 .navbar a {
   color: var(--white-color) !important;
+}
+
+.navbar a:hover {
+  color: var(--secondary-color) !important;
 }
 
 /* .navbar ul a {
@@ -93,11 +110,6 @@
   width: 40%;
 }
 
-.aboutus-section .container-fluid .text hr {
-  border-color: var(--secondary-color);
-  opacity: 1;
-}
-
 .aboutus-section .container-fluid .image img {
   width: 400px;
   height: 400px;
@@ -120,13 +132,44 @@
   }
 }
 
-/* Start Testimonials */
-
-.testimonials-section .header hr {
-  width: 25%;
-  border: 5px solid var(--secondary-color);
-  opacity: 1;
+/* Start Menu */
+.menu-section .row {
+  width: 100%;
+  justify-content: center;
 }
+
+.menu-section .row .card {
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  background-color: transparent;
+}
+
+.menu-section .row .card h5 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.menu-section .row .card p {
+  color: white;
+}
+
+.menu-section .row .card img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  transition: 0.5s;
+}
+
+.menu-section .row .card img:hover {
+  transform: scale(0.8);
+}
+
+/* Start Testimonials */
 
 .testimonials-section img {
   width: 100%;
@@ -148,7 +191,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .carousel-control-prev-icon {
@@ -160,7 +203,7 @@
 
 @media (max-width: 768px) {
   .testimonials-section .card {
-    padding: 0rem;
+    padding: 1rem;
     width: 40%;
     font-size: 0.8rem;
   }
@@ -169,5 +212,57 @@
   .testimonials-section .card {
     padding: 0rem;
     width: 30%;
+  }
+}
+
+/* Start Gallery */
+
+.gallery-section hr {
+  width: 30%;
+}
+
+.gallery-section .images .img {
+  padding: 0;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.gallery-section .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: zoom-in;
+  transition: 0.5s;
+}
+
+.gallery-section .images img:hover {
+  transform: scale(1.3);
+}
+
+/* Start Contact */
+
+.contactus-section .container {
+  gap: 4rem;
+}
+
+.contactus-section form input {
+  padding: 0.2rem;
+  border: 1px solid var(--medium-gray-color);
+  border-radius: 0.8rem;
+}
+
+.contactus-section form button {
+  padding: 0.8rem;
+  border: 0;
+  border-radius: 0.8rem;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+}
+
+@media (min-width: 769px) {
+  .contactus-section .left,
+  .contactus-section form {
+    width: 50%;
   }
 }
